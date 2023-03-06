@@ -15,8 +15,7 @@ const Projects = () => {
                     <img src={monolith} alt="Monolith " />
                     <p>The purpose of the project is to enable the creation of interactive bubbles, which
 will function in the Rocket.chat environment. These bubbles will allow to
-increase interactivity between chat users and will add new features accessible directly from the conversation without having to resort to opening different applications.
-opening of different applications. The system will offer developers a set of
+increase interactivity between chat users and will add new features accessible directly from the conversation without having to resort to opening different applications. The system will offer developers a set of
 APIs to create and release new bubbles, and to end users the ability
 to take advantage of a set of predefined bubbles.
                     </p>
@@ -30,7 +29,7 @@ to take advantage of a set of predefined bubbles.
                     <img src={jazz} alt="Jazz Cloud" />
                     <p>Carry out a feasibility study for the creation of a specifc cloud system, developed as a plugin, which would allow the exchange of test packets used and executed
 on Jazz (parent tool - Test executor). The intent of Jazz Cloud is to add functionalities for sharing test packets, uploading, downloading and exporting (implementation of a support algorithm to optimize the correct
-extraction of fles). All this by relying on a intuitive and dynamic GUI (Graphic User Interface).
+extraction of files). All this by relying on a intuitive and dynamic GUI (Graphic User Interface).
 Once the code was developed, and its correctness was proved, it was committed and made available to all the team. The access point to Jazz Cloud and its additional features, are reachable
 through Jazz external tools. Jazz is a tool used all over the world within Infneon Technologies,
 and Jazz Cloud aims to increase its diffusion by making it easier to use.
