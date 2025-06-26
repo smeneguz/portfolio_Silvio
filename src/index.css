@@ -38,11 +38,48 @@ code {
 
 .header,
 .about,
+.skills,
 .projects,
 .experience,
 .social,
 .footer {
   padding: 50px 25px 25px;
+  transition: all 0.3s ease;
+}
+
+/* Smooth journey effect - sections flow like a balloon path */
+.header {
+  position: relative;
+}
+
+.about {
+  position: relative;
+  margin-top: 20px;
+}
+
+.skills {
+  position: relative;
+  margin-top: 30px;
+}
+
+.projects {
+  position: relative;
+  margin-top: 40px;
+}
+
+.experience {
+  position: relative;
+  margin-top: 30px;
+}
+
+.social {
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 10px;
 }
 
 /* ------------------------------------------------------ */
@@ -90,10 +127,20 @@ code {
   margin: 25px auto;
 }
 
-.about p {
+.about__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about__content p {
   font-size: 18px;
-  line-height: 130%;
-  max-width: 75ch;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about__content p:last-child {
+  margin-bottom: 0;
 }
 
 /* ------------------------------------------------------ */
@@ -111,44 +158,62 @@ code {
 }
 
 .projects__cards {
-  display: flex;
-  justify-content: flex-start;
- /*align-items: center; */
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  justify-items: center;
 }
 
 .projects__card {
-  max-width: 350px;
-
-  padding: 20px;
-
+  width: 100%;
+  max-width: 380px;
+  min-height: 450px;
+  
+  padding: 25px;
+  
   border: 1px solid #0088BB;
   border-radius: 8px;
+  background-color: rgba(0, 136, 187, 0.01);
+  
+  display: flex;
+  flex-direction: column;
+  
+  transition: all 0.3s ease;
+}
+
+.projects__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 136, 187, 0.1);
+  background-color: rgba(0, 136, 187, 0.03);
 }
 
 .projects__card h3 {
-  font-size: 32px;
-  font-weight: 300;
-  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #0088BB;
 }
 
 .projects__card p {
   font-size: 16px;
-  margin: 20px 0;
+  line-height: 1.5;
+  margin: 15px 0;
+  flex-grow: 1;
+  text-align: justify;
 }
 
 .projects__card img {
   width: 100%;
-  height: auto;
-  margin: 20px 0 10px;
-
-  border-radius: 8px;
+  max-height: 180px;
+  object-fit: cover;
+  margin: 10px 0 15px;
+  border-radius: 6px;
 }
 
 .projects__card .button {
-  margin: 10px 5px 0;
+  margin: 8px 8px 0 0;
+  padding: 8px 16px;
+  font-size: 14px;
 }
 
 /* ------------------------------------------------------ */
@@ -217,3 +282,57 @@ code {
   color: #FFFFFF;
 
 }
+
+/* ------------------------------------------------------ */
+/* -- Skills -- */
+
+.skills h2 {
+  font-size: 42px;
+  margin: 25px auto;
+}
+
+.skills__content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.skills__category {
+  padding: 25px;
+  border: 1px solid #0088BB;
+  border-radius: 8px;
+  background-color: rgba(0, 136, 187, 0.02);
+}
+
+.skills__category h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #0088BB;
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills__tags span {
+  background-color: rgba(0, 136, 187, 0.1);
+  color: #0088BB;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid rgba(0, 136, 187, 0.2);
+  transition: all 0.2s ease;
+}
+
+.skills__tags span:hover {
+  background-color: rgba(0, 136, 187, 0.15);
+  transform: translateY(-1px);
+}
+
+/* ------------------------------------------------------ */
