@@ -13,6 +13,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* Subtle cloud background */
+  background-image: url('./assets/cloud.jpeg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Overlay to ensure readability */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+  pointer-events: none;
 }
 
 code {
@@ -347,6 +367,7 @@ code {
   z-index: 10;
   pointer-events: none;
   transition: all 3s ease-in-out;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .airship-journey img {
@@ -421,44 +442,51 @@ code {
 /* Subtle gradient progression with sky/airship theme colors */
 .header {
   background: linear-gradient(180deg, 
-    rgba(135, 206, 235, 0.02) 0%, 
-    rgba(135, 206, 235, 0.04) 100%);
+    rgba(255, 255, 255, 0.4) 0%, 
+    rgba(135, 206, 235, 0.15) 100%);
+  backdrop-filter: blur(1px);
 }
 
 .about {
   background: linear-gradient(180deg, 
-    rgba(135, 206, 235, 0.04) 0%, 
-    rgba(0, 136, 187, 0.06) 100%);
+    rgba(135, 206, 235, 0.15) 0%, 
+    rgba(0, 136, 187, 0.18) 100%);
+  backdrop-filter: blur(1px);
 }
 
 .skills {
   background: linear-gradient(180deg, 
-    rgba(0, 136, 187, 0.06) 0%, 
-    rgba(0, 136, 187, 0.08) 100%);
+    rgba(0, 136, 187, 0.18) 0%, 
+    rgba(0, 136, 187, 0.22) 100%);
+  backdrop-filter: blur(1px);
 }
 
 .projects {
   background: linear-gradient(180deg, 
-    rgba(0, 136, 187, 0.08) 0%, 
-    rgba(0, 136, 187, 0.10) 100%);
+    rgba(0, 136, 187, 0.22) 0%, 
+    rgba(0, 136, 187, 0.25) 100%);
+  backdrop-filter: blur(1px);
 }
 
 .experience {
   background: linear-gradient(180deg, 
-    rgba(0, 136, 187, 0.10) 0%, 
-    rgba(0, 136, 187, 0.08) 100%);
+    rgba(0, 136, 187, 0.25) 0%, 
+    rgba(0, 136, 187, 0.22) 100%);
+  backdrop-filter: blur(1px);
 }
 
 .social {
   background: linear-gradient(180deg, 
-    rgba(0, 136, 187, 0.08) 0%, 
-    rgba(0, 136, 187, 0.06) 100%);
+    rgba(0, 136, 187, 0.22) 0%, 
+    rgba(0, 136, 187, 0.18) 100%);
+  backdrop-filter: blur(1px);
 }
 
 .footer {
   background: linear-gradient(180deg, 
-    rgba(0, 136, 187, 0.06) 0%, 
-    rgba(135, 206, 235, 0.04) 100%);
+    rgba(0, 136, 187, 0.18) 0%, 
+    rgba(255, 255, 255, 0.4) 100%);
+  backdrop-filter: blur(1px);
 }
 
 /* Smooth scroll behavior */
