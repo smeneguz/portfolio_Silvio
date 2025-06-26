@@ -72,7 +72,7 @@ const AirshipJourney = () => {
                             Silvio, the Explorer
                         </div>
                         <div className="legend-subtitle">
-                            Discovering new frontiers in blockchain
+                            Carried by Curiosity. Guided by Code.
                         </div>
                     </div>
                 )}
