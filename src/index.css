@@ -405,6 +405,15 @@ code {
   text-align: center;
 }
 
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* ------------------------------------------------------ */
 /* -- HTML COMPONENTS: BUTTON -- */
 .button {
@@ -669,51 +678,6 @@ code {
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .skills__section-title {
-    font-size: 24px;
-  }
-  
-  .skills__category {
-    padding: 18px 20px;
-    margin-bottom: 18px;
-  }
-  
-  .skills__category h3 {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-  
-  .skill-tag {
-    font-size: 12px;
-    padding: 7px 12px;
-  }
-  
-  .skills__tags {
-    gap: 6px;
-  }
-}
-
-@media (max-width: 480px) {
-  .skills__content {
-    padding: 0 15px;
-  }
-  
-  .skills__category {
-    padding: 15px;
-  }
-  
-  .skill-tag {
-    font-size: 11px;
-    padding: 6px 10px;
-  }
-  
-  .skills__tags {
-    gap: 5px;
-  }
-}
-
 /* ------------------------------------------------------ */
 /* -- Airship Journey Effect -- */
 
@@ -871,5 +835,155 @@ html {
   
   .legend-subtitle {
     font-size: 11px;
+  }
+}
+
+/* Web3 Badge Styles */
+.web3-badge {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.web3-badge__content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(0, 136, 187, 0.1), rgba(0, 136, 187, 0.05));
+  border: 1px solid rgba(0, 136, 187, 0.3);
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.web3-badge__content:hover {
+  background: linear-gradient(135deg, rgba(0, 136, 187, 0.2), rgba(0, 136, 187, 0.1));
+  border-color: rgba(0, 136, 187, 0.5);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 136, 187, 0.2);
+}
+
+.web3-badge__icon {
+  font-size: 16px;
+  animation: pulse 2s infinite;
+}
+
+.web3-badge__text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0088BB;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Web3Badge Tooltip Styles */
+.web3-badge__tooltip {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 136, 187, 0.2);
+  border-radius: 12px;
+  padding: 0;
+  min-width: 320px;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+  z-index: 1000;
+  animation: tooltipSlideIn 0.3s ease-out;
+}
+
+.web3-badge__tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 24px;
+  border: 8px solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.95);
+}
+
+.tooltip__content {
+  padding: 20px;
+}
+
+.tooltip__content h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0088BB;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tooltip__content p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.tooltip__content p:last-of-type {
+  margin-bottom: 16px;
+}
+
+.tooltip__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.feature {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  padding: 6px 10px;
+  background: rgba(0, 136, 187, 0.05);
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid rgba(0, 136, 187, 0.1);
+}
+
+@keyframes tooltipSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for Web3Badge */
+@media (max-width: 768px) {
+  .web3-badge__tooltip {
+    right: -20px;
+    left: -20px;
+    min-width: auto;
+    max-width: none;
+  }
+  
+  .web3-badge__tooltip::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .tooltip__features {
+    grid-template-columns: 1fr;
+  }
+  
+  .web3-badge__text {
+    display: none;
+  }
+  
+  .web3-badge__content {
+    padding: 8px 12px;
   }
 }
