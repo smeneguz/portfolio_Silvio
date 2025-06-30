@@ -1,0 +1,13 @@
+{
+  "build": {
+    "command": "npm install && npm run build",
+    "publishDir": "build",
+    "baseDir": "./",
+    "environment": {
+      "PUBLIC_URL": "./"
+    }
+  },
+  "site": {
+    "id": "withered-surf-7543"
+  }
+}

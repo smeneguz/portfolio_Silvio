@@ -91,7 +91,7 @@ const Projects = () => {
                 </div>
 
                 <div className="projects__card">
-                    <h3>Brembo-chain</h3>
+                    <h3>Manufacturing Blockchain</h3>
                     <img src={brem} alt="Manufacturing Blockchain" />
                     <p>Private Ethereum-based blockchain integration for motor parts manufacturing optimisation.
                        Research focused on enhancing manufacturing transparency, efficiency, and security through blockchain
