@@ -229,6 +229,13 @@ code {
   object-fit: cover;
   margin: 10px 0 15px;
   border-radius: 6px;
+  background-color: #f8f9fa;
+}
+
+/* Special styling for Monolith image to show the full image */
+.projects__card img.monolith-image {
+  object-fit: contain;
+  background-color: #ffffff;
 }
 
 .projects__card .button {

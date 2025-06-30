@@ -104,7 +104,7 @@ const Projects = () => {
 
                 <div className="projects__card">
                     <h3>Monolith</h3>
-                    <img src={monolith} alt="Monolith" />
+                    <img className='monolith-image' src={monolith} alt="Monolith" />
                     <p>Interactive SDK enabling creation of dynamic bubbles for Rocket.chat environments. 
                        Increases interactivity between chat users by adding new features accessible directly from conversations 
                        without external applications. Provides developers with APIs for creating custom bubbles 
