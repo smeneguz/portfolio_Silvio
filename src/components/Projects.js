@@ -1,12 +1,13 @@
 // Import Assets
 import monolith from '../assets/monolith.png'
 import jazz from '../assets/jazz.png'
-import market from '../assets/ongoing.gif'
 import b4a from '../assets/b4a.png'
 import dao from '../assets/dao.jpeg'
 import eudream from '../assets/eudream.jpg'
 import swapfee from '../assets/swapfee.webp'
 import efort from '../assets/efort.png'
+import dc from '../assets/dc.jpg'
+import brem from '../assets/brem.png'
 
 const Projects = () => {
     return (
@@ -25,7 +26,7 @@ const Projects = () => {
                     </p>
 
                     <a href="https://eu-dream.eu/" target="_blank" rel="noreferrer" className="button">Project Site</a>
-                    <a href="https://github.com/smeneguz/placeholder-repo" target="_blank" rel="noreferrer" className="button">Code</a>
+                    <a href="https://github.com/smeneguz/euDream_MT" target="_blank" rel="noreferrer" className="button">Code</a>
                 </div>
 
                 <div className="projects__card">
@@ -37,7 +38,7 @@ const Projects = () => {
                     </p>
 
                     <a href="https://efort-project.eu/" target="_blank" rel="noreferrer" className="button">Project Site</a>
-                    <a href="https://github.com/smeneguz/placeholder-repo" target="_blank" rel="noreferrer" className="button">Code</a>
+                    <a href="https://github.com/smeneguz/eFORT_chain_HL" target="_blank" rel="noreferrer" className="button">Code</a>
                 </div>
 
                 <div className="projects__card">
@@ -73,12 +74,12 @@ const Projects = () => {
                        based on specific use cases, supporting both technical and non-technical users.
                     </p>
 
-                    <a href="https://github.com/smeneguz/placeholder-repo" target="_blank" rel="noreferrer" className="button">Code</a>
+                    <a href="https://github.com/smeneguz/B4A" target="_blank" rel="noreferrer" className="button">Code</a>
                 </div>
 
                 <div className="projects__card">
-                    <h3>Data Marketplace</h3>
-                    <img src={market} alt="Data Marketplace" />
+                    <h3>Data Cellar</h3>
+                    <img src={dc} alt="Data Cellar" />
                     <p>Blockchain-based data marketplace integrating Ocean Protocol with IDSA for transparent, interoperable data exchange. 
                        Part of the DataCellar project, focusing on silo-free energy data exchange within GAIA-X framework. 
                        Data published as ERC721 NFTs & ERC20 datatokens with Compute-to-Data capabilities.
@@ -87,6 +88,18 @@ const Projects = () => {
                     <a href="https://datacellarproject.eu/" target="_blank" rel="noreferrer" className="button">DataCellar Project</a>
                     <a href="https://github.com/smeneguz/Data-marketplace-blockchain" target="_blank" rel="noreferrer" className="button">Code</a>
                     <a href="https://oceanprotocol.com/" target="_blank" rel="noreferrer" className="button">Ocean Protocol</a>
+                </div>
+
+                <div className="projects__card">
+                    <h3>Brembo-chain</h3>
+                    <img src={brem} alt="Manufacturing Blockchain" />
+                    <p>Private Ethereum-based blockchain integration for motor parts manufacturing optimisation.
+                       Research focused on enhancing manufacturing transparency, efficiency, and security through blockchain
+                       technology combined with Human-Machine Interface (HMI) systems for real-time monitoring and control.
+                       Demonstrated significant improvements in operational transparency and product quality traceability.
+                    </p>
+ 
+                    <a href="https://github.com/smeneguz/Brembo-chain" target="_blank" rel="noreferrer" className="button">Code</a>
                 </div>
 
                 <div className="projects__card">
