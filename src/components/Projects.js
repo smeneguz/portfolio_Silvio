@@ -5,7 +5,7 @@ import b4a from '../assets/b4a.png'
 import dao from '../assets/dao.jpeg'
 import eudream from '../assets/eudream.jpg'
 import swapfee from '../assets/swapfee.webp'
-import efort from '../assets/efort.png'
+import eFORT from '../assets/efort.png'
 import dc from '../assets/dc.jpg'
 import brem from '../assets/brem.png'
 
@@ -31,7 +31,7 @@ const Projects = () => {
 
                 <div className="projects__card">
                     <h3>eFORT</h3>
-                    <img src={efort} alt="eFORT" />
+                    <img src={eFORT} alt="eFORT" />
                     <p>European project exploring resilient, fault-tolerant ledger mechanisms for critical energy infrastructures. 
                        Developed a Hyperledger Fabric-based blockchain architecture with four main organizations (DSO, TSO, Aggregator) 
                        managing energy trading, battery registration, and automated payments through smart contracts.
