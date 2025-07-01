@@ -957,6 +957,31 @@ html {
   border: 1px solid rgba(0, 136, 187, 0.1);
 }
 
+/* Web3Badge Tooltip Links */
+.tooltip__links {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.tooltip__links a {
+  display: inline-block;
+  background: linear-gradient(135deg, #0088BB, #0066AA);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 136, 187, 0.3);
+}
+
+.tooltip__links a:hover {
+  background: linear-gradient(135deg, #0066AA, #004488);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 136, 187, 0.3);
+}
+
 @keyframes tooltipSlideIn {
   from {
     opacity: 0;
