@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Silvio Meneguzzo - Portfolio</title>
+    <script>
+        // IPFS redirect handling
+        const currentPath = window.location.pathname;
+        const basePath = currentPath.replace(/\/ipfs\/[^\/]+/, '');
+        if (basePath !== currentPath) {
+            window.location.replace(basePath || '/');
+        } else {
+            window.location.replace('/');
+        }
+    </script>
+</head>
+<body>
+    <div id="root">
+        <p>Redirecting...</p>
+    </div>
+</body>
+</html>
