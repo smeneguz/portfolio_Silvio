@@ -9,7 +9,7 @@ const AirshipJourney = () => {
         // Show legend for 3 seconds, then start exploration
         const legendTimer = setTimeout(() => {
             setShowLegend(false);
-        }, 3000);
+        }, 5000);
 
         return () => clearTimeout(legendTimer);
     }, []);
