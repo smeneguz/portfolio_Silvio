@@ -43,7 +43,7 @@ body {
   color: var(--text-dark);
   
   /* Subtle cloud background */
-  background-image: url('./assets/cloud.jpeg');
+  background-image: url('./assets/cloud.jpg');
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
