@@ -8,6 +8,7 @@ import swapfee from '../assets/swapfee.webp'
 import eFORT from '../assets/efort.png'
 import dc from '../assets/dc.jpg'
 import brem from '../assets/brem.png'
+import zkintro from '../assets/01_zkp-magic.png'
 
 const Projects = () => {
     return (
@@ -113,6 +114,19 @@ const Projects = () => {
 
                     <a href="https://github.com/smeneguz/Monolith-Documentation" target="_blank" rel="noreferrer" className="button">Documentation</a>
                     <a href="https://github.com/smeneguz/monolith-sdk" target="_blank" rel="noreferrer" className="button">Code</a>
+                </div>
+
+                <div className="projects__card">
+                    <h3>zkintro - Italian Translation</h3>
+                    <img src={zkintro} alt="zkintro Project" />
+                    <p>Italian translation and adaptation of technical articles on Zero Knowledge Proofs for the zkintro project. 
+                       Responsible for translating complex ZKP concepts from English to Italian, making advanced cryptographic topics 
+                       accessible to Italian-speaking audiences. Covers foundational ZKP mathematics, practical programming guides, 
+                       and real-world applications with hands-on examples.
+                    </p>
+
+                    <a href="https://github.com/zkintro/zkintro" target="_blank" rel="noreferrer" className="button">GitHub Repo</a>
+                    <a href="https://github.com/zkintro/zkintro/tree/main/content/it" target="_blank" rel="noreferrer" className="button">Italian Content</a>
                 </div>
 
                 <div className="projects__card">
